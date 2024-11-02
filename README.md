@@ -31,13 +31,13 @@ To get this project up and running locally on your machine:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/sohelkureshi/ProjectManagement.git
+   https://github.com/sohelkureshi/Materials-Comparison-Dashboard.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd ProjectManagement
+   cd Materials-Comparison-Dashboard
    ```
 
 3. Open `index.html` in your preferred web browser to view the dashboard.
