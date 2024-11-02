@@ -1,0 +1,126 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/image111.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Centered and Bordered Dashboard */
+.dashboard {
+    width: 90%;
+    max-width: 900px;
+    height: calc(100vh - 120px); /* Subtract height of navbar and footer */
+    margin: 0 auto;
+    padding: 15px; /* Reduced padding to fit in one screen */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    overflow-y: auto; /* Optional: add vertical scroll within dashboard if content overflows */
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 20px; /* Reduced font size */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Filter Options */
+.filters {
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+label, select {
+    font-size: 14px; /* Reduced font size */
+    color: #555;
+}
+
+select {
+    padding: 5px 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f3f3f3;
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    height: 250px; /* Reduced height to fit */
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Data Table Styling */
+.data-table {
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 6px; /* Reduced padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    padding: 0.9em; /* Reduced padding */
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 10px; /* Adjusted margin */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.15em; /* Matching padding with navbar */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}

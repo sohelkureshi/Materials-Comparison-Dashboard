@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials Comparison Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard">
+    <h1>Materials Comparison Dashboard</h1>
+
+    <!-- Filter Options -->
+    <div class="filters">
+        <label for="property">Compare by:</label>
+        <select id="property" onchange="updateChart()">
+            <option value="strength">Load-Bearing Capacity (PSI)</option>
+            <option value="cost">Cost (USD/m³)</option>
+            <option value="weathering">Weathering Resistance</option>
+            <option value="fireResistance">Fire Resistance</option>
+            <option value="durability">Durability</option>
+            <option value="sustainability">Sustainability</option>
+            <option value="aesthetics">Aesthetics</option>
+            <option value="workability">Workability</option>
+        </select>
+    </div>
+
+    <!-- Chart Container -->
+    <div class="chart-container">
+        <canvas id="materialChart"></canvas>
+    </div>
+
+    <!-- Data Table -->
+    <div class="data-table">
+        <table id="materialTable">
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <th>Unit</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; All rights reserved SK(THE CHAMP) Pvt. Ltd.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
